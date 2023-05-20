@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}CommandeVoitures index{% endblock %}
+
+{% block body %}
+    <h1>CommandeVoitures index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nom_complet</th>
+                <th>Email</th>
+                <th>Num_tel</th>
+                <th>Adresse_livraison</th>
+                <th>Marque_voiture</th>
+                <th>Modele_voiture</th>
+                <th>Prix_voiture</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for commande_voiture in commande_voitures %}
+            <tr>
+                <td>{{ commande_voiture.id }}</td>
+                <td>{{ commande_voiture.NomComplet }}</td>
+                <td>{{ commande_voiture.Email }}</td>
+                <td>{{ commande_voiture.numTel }}</td>
+                <td>{{ commande_voiture.AdresseLivraison }}</td>
+                <td>{{ commande_voiture.MarqueVoiture }}</td>
+                <td>{{ commande_voiture.ModeleVoiture }}</td>
+                <td>{{ commande_voiture.PrixVoiture }}</td>
+                <td>
+                    <a href="{{ path('app_commande_voitures_show', {'id': commande_voiture.id}) }}">show</a>
+                    <a href="{{ path('app_commande_voitures_edit', {'id': commande_voiture.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="9">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_commande_voitures_new') }}">Create new</a>
+{% endblock %}

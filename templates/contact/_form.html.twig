@@ -1,0 +1,64 @@
+
+<div class="for" >
+
+{{ form_start(form) }}
+    {{ form_widget(form) }}
+  <center>  <button class="btn">{{ button_label|default('Save') }}</button></center>
+{{ form_end(form) }}
+</div>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+ 
+  text-rendering: optimizeLegibility;
+}
+.for {
+     display: flex;
+  flex-direction: column;
+ 
+ 
+        background-color: #add7df;
+      
+			padding: 50px;
+			border-radius: 80px;
+			margin: 50px auto;
+			width: 60%;
+			box-shadow: 0 0 10px rgba(10, 1, 1, 0.5);
+            
+            position: absolute;
+             top: 150px;
+             left: 50%;
+              transform: translateX(-50%);
+
+}
+.btn{
+ 
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+   font-weight: bold;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+</style>

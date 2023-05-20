@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New CommandeAccessoires{% endblock %}
+
+{% block body %}
+   <center> <h3> Commander des Accessoires</h3></center>
+
+    {{ include('commande_accessoires/_form.html.twig') }}
+
+  {#<div class="f">  <footer><p> <a href="{{ path('app_contact_index') }}">back to list</a></p> </footer> </div>#}
+{% endblock %}

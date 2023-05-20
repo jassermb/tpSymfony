@@ -1,0 +1,45 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}CommandeAccessoires index{% endblock %}
+
+{% block body %}
+    <h1>CommandeAccessoires index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nom_complet</th>
+                <th>Adresse_email</th>
+                <th>Num_tel</th>
+                <th>Adresse_livraison</th>
+                <th>Nom_accessoire</th>
+                <th>Prix_accessoire</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for commande_accessoire in commande_accessoires %}
+            <tr>
+                <td>{{ commande_accessoire.id }}</td>
+                <td>{{ commande_accessoire.nomComplet }}</td>
+                <td>{{ commande_accessoire.AdresseEmail }}</td>
+                <td>{{ commande_accessoire.numTel }}</td>
+                <td>{{ commande_accessoire.AdresseLivraison }}</td>
+                <td>{{ commande_accessoire.NomAccessoire }}</td>
+                <td>{{ commande_accessoire.PrixAccessoire }}</td>
+                <td>
+                    <a href="{{ path('app_commande_accessoires_show', {'id': commande_accessoire.id}) }}">show</a>
+                    <a href="{{ path('app_commande_accessoires_edit', {'id': commande_accessoire.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="8">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_commande_accessoires_new') }}">Create new</a>
+{% endblock %}

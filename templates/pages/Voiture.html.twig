@@ -1,0 +1,186 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello PagesController!{% endblock %}
+
+{% block body %}
+<style>
+.card-img-top {
+  /* Propriétés CSS pour la taille de l'image */
+  width: 200px;
+  height: 200px;
+  /* Propriétés CSS pour le style de l'image */
+
+  
+}
+body {
+	 background-color: #cccccc;
+			background-size:  cover;
+		}
+</style>
+
+<table > 
+<th>
+        <td > 
+         <div class="card" style="width: 15rem;">
+          <img src={{asset('image/a.jpg')}}  class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Trouvez la voiture de vos rêves </h5>
+            <p class="card-text">Voitures de qualité. </p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"> BMW </li>
+            <li class="list-group-item">5000$ </li>
+            <div class="col text-right">  1500 g/km					</div>
+          </ul>
+          <div class="card-body">
+            <a href="/commande/voitures/new" class="card-link">contacter nous  </a> 
+          </div>
+        </div> 
+        </td> 
+        <td> 
+         </td>
+       <td > 
+         <div class="card" style="width: 15rem;">
+          <img src={{asset('image/b.jpg')}}  class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Trouvez la voiture de vos rêves </h5>
+            <p class="card-text">Voitures de qualité. </p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"> BMW  </li>
+            <li class="list-group-item">2365$ </li>
+            <div class="col text-right">  985 g/km					</div>
+          </ul>
+          <div class="card-body">
+            <a href="/commande/voitures/new" class="card-link">contacter nous  </a> 
+          </div>
+        </div> 
+        </td> 
+        <td> 
+         </td> <br>
+        <td > 
+         <div class="card" style="width: 15rem;">
+          <img src={{asset('image/e.webp')}}  class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Trouvez la voiture de vos rêves </h5>
+            <p class="card-text">Voitures de qualité. </p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"> Mercedes  </li>
+            <li class="list-group-item">6589$ </li>
+            <div class="col text-right">451 g/km					</div>
+          </ul>
+          <div class="card-body">
+            <a href="/commande/voitures/new" class="card-link">contacter nous  </a> 
+          </div>
+        </div> 
+        </td> 
+        <td> 
+         </td>
+        <td > 
+         <div class="card" style="width: 15rem;">
+          <img src={{asset('image/h.webp')}}  class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Trouvez la voiture de vos rêves </h5>
+            <p class="card-text">Voitures de qualité. </p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"> BMW  </li>
+            <li class="list-group-item">789$ </li>
+            <div class="col text-right">           200 g/km					</div>
+          </ul>
+          <div class="card-body">
+            <a href="/commande/voitures/new" class="card-link">contacter nous  </a> 
+          </div>
+        </div> 
+        </td> 
+        <td> 
+         </td>
+        </div> </table>
+        <br>  
+          <hr> 
+        <table> <th> 
+      <td > 
+         <div class="card" style="width: 15rem;">
+          <img src={{asset('image/cc.webp')}}  class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Trouvez la voiture de vos rêves</h5>
+            <p class="card-text">Voitures de qualité. </p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">  Mercedes  </li>
+            <li class="list-group-item">7520$ </li>
+            <div class="col text-right">           700 g/km					</div>
+          </ul>
+          <div class="card-body">
+            <a href="/commande/voitures/new" class="card-link">contacter nous  </a> 
+          </div>
+        </div> 
+        </td> 
+        <td> 
+         </td>
+       <td > 
+         <div class="card" style="width: 15rem;">
+          <img src={{asset('image/d.png')}}  class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Trouvez la voiture de vos rêves </h5>
+            <p class="card-text">Voitures de qualité. </p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">  Mercedes  </li>
+            <li class="list-group-item">300$ </li>
+            <div class="col text-right">           163 g/km					</div>
+          </ul>
+          <div class="card-body">
+            <a href="/commande/voitures/new" class="card-link">contacter nous  </a> 
+          </div>
+        </div> 
+        </td> 
+        <td> 
+         </td> <br>
+        <td > 
+         <div class="card" style="width: 15rem;">
+          <img src={{asset('image/f.webp')}}  class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Trouvez la voiture de vos rêves </h5>
+            <p class="card-text">Voitures de qualité. </p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">AUDI  </li>
+            <li class="list-group-item">7444$ </li>
+            <div class="col text-right">           5000 g/km					</div>
+          </ul>
+          <div class="card-body">
+            <a href="/commande/voitures/new" class="card-link">contacter nous  </a> 
+          </div>
+        </div> 
+        </td> 
+        <td> 
+         </td>
+        <td > 
+         <div class="card" style="width: 15rem;">
+          <img src={{asset('image/r.png')}}  class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Trouvez la voiture de vos rêves </h5>
+            <p class="card-text">Voitures de qualité. </p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"> Volkswagen   </li>
+            <li class="list-group-item">40000$ </li>
+            <div class="col text-right">           777 g/km					</div>
+          </ul>
+          <div class="card-body">
+            <a href="/commande/voitures/new" class="card-link">contacter nous  </a> 
+          </div>
+        </div> 
+        </td> 
+        <td> 
+         </td>
+        </div> </table>
+
+     
+    
+    
+
+
+{% endblock %}

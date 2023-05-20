@@ -1,0 +1,50 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}CommandeVoitures{% endblock %}
+
+{% block body %}
+    <h1>CommandeVoitures</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ commande_voiture.id }}</td>
+            </tr>
+            <tr>
+                <th>Nom_complet</th>
+                <td>{{ commande_voiture.NomComplet }}</td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td>{{ commande_voiture.Email }}</td>
+            </tr>
+            <tr>
+                <th>Num_tel</th>
+                <td>{{ commande_voiture.numTel }}</td>
+            </tr>
+            <tr>
+                <th>Adresse_livraison</th>
+                <td>{{ commande_voiture.AdresseLivraison }}</td>
+            </tr>
+            <tr>
+                <th>Marque_voiture</th>
+                <td>{{ commande_voiture.MarqueVoiture }}</td>
+            </tr>
+            <tr>
+                <th>Modele_voiture</th>
+                <td>{{ commande_voiture.ModeleVoiture }}</td>
+            </tr>
+            <tr>
+                <th>Prix_voiture</th>
+                <td>{{ commande_voiture.PrixVoiture }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_commande_voitures_index') }}">back to list</a>
+
+    <a href="{{ path('app_commande_voitures_edit', {'id': commande_voiture.id}) }}">edit</a>
+
+    {{ include('commande_voitures/_delete_form.html.twig') }}
+{% endblock %}

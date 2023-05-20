@@ -1,0 +1,245 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello PagesController!{% endblock %}
+
+{% block body %}
+<style>
+body {
+	 background-color: rgb(168, 200, 228);
+			background-size:  cover;
+		}
+
+		#slider {
+			width: 500px;
+			height: 300px;
+			overflow: hidden;
+			margin: 0 auto;
+		}
+		#slider ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			width: 1500px;
+			height: 300px;
+			position: relative;
+			left: 0;
+			animation: slide 10s infinite;
+		}
+		#slider ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			width: 1500px;
+			height: 300px;
+			position: relative;
+			left: 0;
+			animation: slide 10s infinite;
+		}
+		#slider ul li {
+			float: left;
+			width: 500px;
+			height: 300px;
+		}
+		#slider ul li a {
+			display: block;
+			text-align: center;
+			margin-bottom: 10px;
+			font-weight: bold;
+			color: #333;
+			text-decoration: none;
+		}
+		#slider ul li img {
+			display: block;
+			margin: 0 auto;
+			max-width: 100%;
+			height: auto;
+		}
+		@keyframes slide {
+			0% {
+				left: 0;
+			}
+			20% {
+				left: 0;
+			}
+			25% {
+				left: -500px;
+			}
+			45% {
+				left: -500px;
+			}
+			50% {
+				left: -1000px;
+			}
+			70% {
+				left: -1000px;
+			}
+			75% {
+				left: -1500px;
+			}
+			95% {
+				left: -1500px;
+			}
+			100% {
+				left: 0;
+			}
+		}
+         ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      
+      li {
+        margin-bottom: 10px;
+      }
+	  p {
+  text-align: justify; /* Aligner le texte justifié */
+  margin-bottom: 10px; /* Ajouter une marge en bas du paragraphe */
+  line-height: 1.5; /* Espacement entre les lignes pour une meilleure lisibilité */
+}
+      
+      img {
+        max-width: 100%;
+        height: auto;
+
+      }
+	          .bg{
+     width: 1200px;
+			height: 600px;
+        }
+		.bgg{
+     width: 100%;
+			height: 50%;
+        }
+		
+	</style>   
+
+
+		<center><h1>Vente de voitures </h1></center> <br>
+	
+			<img src="image/pp.jpg" alt="Voiture " class="bg">
+			
+	<main>
+	<center>
+		<section class="banner">
+			<h2>Bienvenue chez nous</h2>
+			<p>Une large sélection de véhicules de qualité pour tous vos besoins en matière de transport.</p>
+			<a href="/Voitures" class="button">Voir nos voitures</a>
+		</section></center>
+		<section class="featured">
+			<h2>Voitures en vedette</h2>
+			<center>
+			<div class="car">
+				<img src="image/cars6.webp" alt="Voiture en vedette" class="bgg" >
+				<h3>Mercedes </h3>
+				<p>Découvrez le luxe et le raffinement de Mercedes, une voiture qui allie élégance intemporelle et performances de pointe.</p>
+				<a href="/Voitures" class="button">En savoir plus</a>
+			</div>
+				
+			<div class="car"  >
+				<img src="image/car3.png" alt="Voiture en vedette" >
+				<h3>BMW</h3>
+				<p> Plongez dans l'univers de la conduite ultime avec BMW,une voiture qui conjugue puissance, dynamisme et technologie de pointe pour une expérience de conduite incomparable.</p>
+				<a href="/Voitures" class="button">En savoir plus</a>
+			</div>
+			<div class="car">
+				<img src="image/car2.webp" alt="Voiture en vedette" class="bgg">
+				<h3>Volkswagen </h3>
+				<p> Optez pour la fiabilité et le confort sans compromis avec Volkswagen, 
+				une voiture polyvalente qui saura vous accompagner dans tous vos trajets, 
+				que ce soit en ville ou sur les routes de campagne.</p>
+				<a href="Voitures" class="button">En savoir plus</a>
+			</div></center><br>
+		</section>
+        <div id="slider">
+            <ul>
+                <li>
+                    <a href="/Voitures">
+                          BMW
+                    </a>
+                    <img src="image/bmw1.png" alt="BMW">
+                </li>
+                <li>
+                    <a href="Voitures">
+                        BMW
+                    </a>
+                    <img src="image/car3.webp" alt="BMW">
+                </li>
+                <li>
+                    <a href="Voitures">
+                      BMW
+                    </a>
+                    <img src="image/cars4.png" alt="BMW">
+                </li>
+                
+                
+            </ul>
+        </div>
+		<br> 
+			<section class="banner">
+			<h2>Bienvenue chez nous</h2>
+			<p>Une large sélection de Accessoire de qualité pour tous vos besoins en matière de transport.</p>
+			<a href="/Voitures" class="button">Voir nos voitures</a>
+		</section>
+		<section class="featured">
+			<h2>Accessoires en vedette</h2>
+			<center>
+			<div class="car">
+				<img src="image\111.jpg" alt="Accessoire en vedette" >
+				<h3>Boîte de vitesse performance </h3>
+				<p>Maximisez les performances de votre voiture avec notre boîte de vitesse de haute performance,
+				 conçue pour des changements de vitesse fluides et précis
+				, vous permettant de profiter pleinement de la puissance de votre véhicule.</p>
+				<a href="/Accessoires" class="button">En savoir plus</a>
+			</div>
+			<br>	
+			<div class="car"  > 
+		>
+				<img src="image/22.jpg" alt="Accessoire en vedette">
+				<h3>Chaise de voiture ergonomique </h3>
+				<p> Améliorez votre confort de conduite avec notre chaise de voiture ergonomique,
+				 spécialement conçue pour offrir un soutien optimal à votre dos et réduire la fatigue lors de longs trajets</p>
+				<a href="/Accessoires" class="button">En savoir plus</a>
+			</div> <br>
+			<div class="car">
+				<img src="image/3.jpg" alt="Voiture en vedette">
+				<h3>Guidon de voiture sportif </h3>
+				<p> Transformez l'intérieur de votre voiture avec notre guidon de voiture sportif, 
+				offrant une prise en main ferme et un design élégant qui rehaussera l'apparence de votre habitacle.</p>
+				<a href="Accessoires" class="button">En savoir plus</a>
+			</div></center><br>
+		</section>
+		<hr> 
+		
+
+		<section class="services">
+			<h2>Nos services</h2>
+			<ul>
+				<li><i class="fas fa-car"></i><span>Garantie de qualité</span></li>
+				<li><i class="fas fa-wrench"></i><span>Service après-vente</span></li>
+				<li><i class="fas fa-dollar-sign"></i><span>Financement disponible</span></li>
+			</ul>
+		</section>
+		<section class="newsletter">
+			<h2>Inscrivez-vous à notre newsletter</h2>
+			<form>
+				<label for="email">Entrez votre adresse e-mail pour recevoir nos offres spéciales :</label>
+				<input type="email" id="email" name="email">
+				<button type="submit" class="button">S'inscrire</button>
+			</form>
+		</section>
+	</main>
+	<footer>
+		<p>Droit d'auteur © 2023 Vente de voitures </p>
+	</footer>
+
+
+
+
+
+	
+ 
+
+    
+
+{% endblock %}

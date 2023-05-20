@@ -1,0 +1,44 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Contact{% endblock %}
+
+{% block body %}
+   <center><h2>Créer un nouveau Contact</h2></center>
+
+    {{ include('contact/_form.html.twig') }}
+
+  {#<div class="f">  <footer><p> <a href="{{ path('app_contact_index') }}">back to list</a></p> </footer> </div>#}
+
+
+<style>
+footer {
+  background-color: #f0f0f0;
+  padding: 10px;
+  text-align: center;
+}
+input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+footer a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-top: 10px;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #eee;
+  transition: all 0.3s ease;
+}
+
+footer a:hover {
+  color: #fff;
+  background-color: #333;
+}
+
+</style>
+{% endblock %}
